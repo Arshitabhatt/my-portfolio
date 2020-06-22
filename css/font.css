@@ -1,0 +1,30 @@
+@font-face{
+    font-family: 'spaceGrotesk';
+	src: 
+		local('Space Grotesk'),
+		local('Space-Grotesk'),
+        url('/font/otf/SpaceGrotesk-Regular.otf') format('opentype'),
+		url('/font/webfontkit/spacegrotesk-regular-webfont.woff') format('woff');
+		font-weight: regular;
+}
+
+@font-face{
+    font-family: 'spaceGrotesk';
+	src: 
+		local('Space Grotesk'),
+		local('Space-Grotesk'),
+		url('/font/otf/SpaceGrotesk-SemiBold.otf') 
+        format('opentype'),
+    	/* url('/font/webfontkit/spacegrotesk-semibold-webfont.woff') format('woff'); */
+    font-weight: semi-bold;
+}
+
+@font-face{
+    font-family: 'spaceGrotesk';
+	src: 
+		local('Space Grotesk'),
+		local('Space-Grotesk'),
+		url('/font/otf/SpaceGrotesk-Bold.otf') 
+        format('opentype');
+    font-weight: bold;
+} 
