@@ -10,6 +10,8 @@
 *{
     font-family: spaceGrotesk ;
     /* overflow-x: hidden; */
+    margin: auto;
+    padding: auto;
 }
 
 body{
