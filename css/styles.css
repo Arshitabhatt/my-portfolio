@@ -2,9 +2,9 @@
 :root {
     --animate-duration: 2000ms;
     --animate-delay: 2s;
-    --primary: #ffc38b;
-    --secondary: #4d3e3e;
-    --third: #fff3cd;
+    --primary:  #f3e1e1;
+    --secondary:#faf6e9 ;
+    --third: #000;
   }
 
 *{
@@ -83,7 +83,7 @@ body{
 #mainNavbar .nav-link{
     font-size:1rem;
     font-weight: 100;
-    color:var(--secondary);
+    color:#000;
     margin:0px 5px;
     
 }
