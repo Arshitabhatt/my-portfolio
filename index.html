@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
     </head>
@@ -18,7 +19,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- navbar -->
+        <!-- NAVBAR -->
         <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md fixed-top mb-5">
                 <a href="#" class="navbar-brand"><img src="/icons/Logos/0.75x/Logor7ldpi.png" alt=""></a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
@@ -39,33 +40,102 @@
         
                     </div>
             </nav>
-
+<!-- WELCOME -->
         <div class="container">
-            <div class="top animate__animated animate__fadeInUpBig">
+            <div class="top " data-aos="fade-up"> 
                 <h1 class="display-3 pt-5">Namaste!</h1>
                 <h3 class="display-4">Welcome to my website</h3>
                 <!-- <p class>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic porro nobis in ut nemo distinctio at maxime, rem illo perspiciatis dignissimos rerum eos totam reiciendis sint dolorem minima facere culpa!</p> -->
             </div>
         </div>
-
+<!-- MY INTRODUCTION -->
         <div class="intro row">
-                <div class="col-6 aboutme">
-                    <img src="/icons/download.jpeg" alt="">
-                </div>
-                <div class="col-6 aboutme">
+                <div class="col-md-6 col-12 order-2 order-md-1 aboutme para" data-aos="fade-up">
                     <h3>I am Arshita Bhatt</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam, voluptatibus sunt unde enim minima sequi rerum asperiores quam, velit esse error animi veniam, repellat tempore doloribus praesentium omnis vero!</p>
                 </div>
-            </div>
+                <div class="col-md-6 col-12 order-1 order-md-2 aboutme" data-aos="fade-up" data-aos-anchor=".para">
+                        <img src="/icons/download.jpeg">
+                </div>
+        </div>
+
+            <!-- PROJECTS -->
         <div class="projects pt-5">
-            <div class="mt-5"></div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, mollitia earum? Pariatur obcaecati amet sit quos vero animi consequatur voluptatem! Quas maiores culpa obcaecati veritatis tenetur odio ipsam reprehenderit nam.</p>
+            <div class="m-5"></div>
+            <div class="container">
+                    <h6 class="text-center display-4 pb-3" data-aos="fade-up">Projects</h6>
+                <div class="row">
+                    <div class="col-md-4 col-12 pb-3" data-aos="fade-up">
+                        <div class="card" style="width: 18rem;">
+                            <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <hr class="project-divider">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <hr class="project-divider">
+                            <div class="card-body">
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 pb-3" data-aos="fade-up">
+                        <div class="card" style="width: 18rem;">
+                            <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <hr class="project-divider">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <hr class="project-divider">
+                            <div class="card-body">
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 pb-3" data-aos="fade-up">
+                        <div class="card" style="width: 18rem;">
+                            <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <hr class="project-divider">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <hr class="project-divider">
+                            <div class="card-body">
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- CONTACT -->
+        <div class="contact container mb-5" data-aos="fade-up">
+            <!-- <img src="/icons/Logos/0.75x/Background2ldpi.png" alt=""> -->
+            <h6 class="text-center display-4 pb-3" data-aos="fade-up">How can I contribute? Let me know below!</h6>
+            <form action="index.html" class="contact-form" method="POST">
+                <input type="text" class="contact-form-text" placeholder="Your Name">
+                <input type="email" class="contact-form-text" placeholder="Your Email">
+                <textarea type="text" name="" cols="30" rows="10" class="contact-form-text" placeholder="Share the ideas!"></textarea>
+                <input type="submit"class="contact-form-btn" value="Send"></input>
+            </form>
         </div>
         
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="/js/ui.js" async defer></script>
     </body>
 </html>

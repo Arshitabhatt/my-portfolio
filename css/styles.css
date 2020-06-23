@@ -1,14 +1,15 @@
 @import url('font.css');
 :root {
     --animate-duration: 2000ms;
-    --animate-delay: 0.5s;
-    --primary: #fdee67;
+    --animate-delay: 2s;
+    --primary: #fdfd96;
     --secondary: #101820;
     --third: #dfe2db;
   }
 
 *{
-    font-family: spaceGrotesk;
+    font-family: spaceGrotesk ;
+    /* overflow-x: hidden; */
 }
 
 body{
@@ -18,10 +19,12 @@ body{
     /* background: radial-gradient(circle at center, #fff, #fee715 50%); */
     /* background: radial-gradient(circle at 30% 50%, white 30%, yellow 75%, yellow 75%); */
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 .top{
     margin-top:69px;
-    background: radial-gradient(circle at center, #fff, var(--primary) 35%);
+    background: radial-gradient(circle at center, #fff 10%, rgb(250, 244, 158), var(--primary) 30%);
+    /* background: #fff; */
     background-repeat: no-repeat;
     text-align: center;
     font-size: 1.2em;
@@ -50,22 +53,27 @@ body{
 .intro:before{
     content:'';
     width: 50.3%;
-    height: 100px;
+    height: 53px;
     position: absolute;
-    top: -48px;
+    top: -28px;
     left: 0;
     background:var(--primary);
-    transform: skewY(8deg);
+    transform: skewY(4deg);
 }
 .intro:after{
     content:'';
     width: 50.3%;
-    height: 100px;
+    height: 53px;
     position: absolute;
-    top: -48px;
+    top: -28px;
     right: 0;
     background:var(--primary);
-    transform: skewY(-8deg);
+    transform: skewY(-4deg);
+}
+.intro img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50% 50%;
 }
 .navbar{
     background:var(--primary);
@@ -82,15 +90,15 @@ body{
     color:var(--secondary);
 }
 #mainNavbar .b:hover{
-    border-bottom:2px solid var(--secondary);
-    
+    border-bottom:2px solid var(--secondary); 
 }
 #mainNavbar .b:active{
     border-bottom:2px solid var(--secondary);
 }
 .navbar.scrolled{
-    background: var(--primary);
-    transition: background 1s;
+    /* background: var(--primary);
+    transition: background 1s; */
+    border-bottom: 1px solid var(--secondary);
 }
 .navbar-brand img{
     width: 65px;
@@ -98,30 +106,129 @@ body{
 .aboutme{
     text-align: center;
     margin:auto;
+    padding: auto;
     /* height:500px; */
 }
 .projects{
-    background: var(--primary);
+    /* background: var(--primary); */
     /* width:175px; */
     position: relative;
 }
 .projects:before{
     content:'';
     width: 50.3%;
-    height: 100px;
+    height: 50px;
     position: absolute;
-    top: -48px;
+    top: -25px;
     left: 0;
     background:var(--primary);
-    transform: skewY(-8deg);
+    transform: skewY(-4deg);
 }
 .projects:after{
     content:'';
     width: 50.3%;
-    height: 100px;
+    height: 50px;
     position: absolute;
-    top: -48px;
+    top: -25px;
     right: 0;
     background:var(--primary);
-    transform: skewY(8deg);
+    transform: skewY(4deg);
+}
+
+.projects .card{
+    margin:auto;
+    padding:auto;
+    border-radius: 5%;
+    box-shadow: 0px 10px 12px rgba(0,0,0, 0.7);
+    background: var(--secondary);
+    color: var(--third);
+}
+
+.projects li{
+    background: var(--secondary);
+    color: var(--third);
+}
+
+.project-divider{
+    padding: 0;
+    margin: 0;
+    width: 17.7em;
+    /* border-bottom: 0.2px solid var(--third); */
+    box-shadow: 0 1px 2px var(--third);
+}
+
+.contact{
+    margin:100px;
+    /* background-image: url('/icons/Logos/0.75x/Background2ldpi.png'); */
+    /* background-size: 200pkx 200px; */
+    padding: 0px;
+    height: 450px;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing:border-box;
+    margin: 16px 0;
+    border:0;
+    padding: 20px 40px;
+    outline: none;
+    background: var(--secondary);
+    color: var(--third);
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px var(--secondary);
+}
+textarea.contact-form-text{
+    resize:none;
+    height:120px;
+}
+.contact-form-btn{
+    float:right;
+    border:1px solid var(--secondary);
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 12px 50px;
+    cursor: pointer; 
+    /* box-shadow: 0 0 10px 4px var(--secondary); */
+    background: linear-gradient(to right, var(--secondary), var(--secondary));
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.3s 0s;
+}
+.contact-form-btn:hover{
+    /* background: var(--secondary); */
+    color:var(--third);
+     /* transition: 0.5s; */
+     background-size:100% 100%;
+}
+
+
+
+
+@media (max-width: 767.98px) { 
+    .intro:before{
+        height: 0px;
+        transform: skewY(0deg);
+    }
+    .intro:after{
+        height: 0px;
+        transform: skewY(0deg);
+    }
+    .projects:before{
+        height: 0px;
+        transform: skewY(0deg);
+    }
+    .projects:after{
+        height: 0px;
+        transform: skewY(0deg);
+    }
+    #mainNavbar .b:hover{
+        border-bottom:2px solid var(--secondary); 
+    }
+
 }
