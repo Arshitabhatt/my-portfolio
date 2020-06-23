@@ -123,10 +123,11 @@
         <div class="contact container mb-5" data-aos="fade-up">
             <!-- <img src="/icons/Logos/0.75x/Background2ldpi.png" alt=""> -->
             <h6 class="text-center display-4 pb-3" data-aos="fade-up">How can I contribute? Let me know below!</h6>
-            <form action="index.html" class="contact-form" method="POST">
-                <input type="text" class="contact-form-text" placeholder="Your Name">
-                <input type="email" class="contact-form-text" placeholder="Your Email">
-                <textarea type="text" name="" cols="30" rows="10" class="contact-form-text" placeholder="Share the ideas!"></textarea>
+            <form action="POST" class="contact-form" data-netlify="true">
+                <input type="text" name="name" class="contact-form-text" placeholder="Your Name">
+                <input type="email" name="email" class="contact-form-text" placeholder="Your Email">
+                <textarea type="text" name="text" cols="30" rows="10" class="contact-form-text" placeholder="Share the ideas!"></textarea>
+                <div data-netlify-recaptcha></div>
                 <input type="submit"class="contact-form-btn" value="Send"></input>
             </form>
         </div>
