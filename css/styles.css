@@ -4,7 +4,8 @@
     --animate-delay: 2s;
     /* --primary: #fdfd96; */
     --primary: #fab40b;
-    --secondary: #101820;
+    /* --secondary: #101820; */
+    --secondary: #625E58;
     --third: #dfe2db;
   }
 
@@ -25,7 +26,7 @@ body{
 .top{
     margin-top:69px;
     /* background: radial-gradient(circle at center, #fff 10%, rgb(250, 244, 158), var(--primary) 30%); */
-    background: radial-gradient(circle at center, #fff , var(--primary) 30%); */
+    background: radial-gradient(circle at center, #fff , var(--primary) 30%);
     /* background: #fff; */
     background-repeat: no-repeat;
     text-align: center;
