@@ -2,15 +2,16 @@
 :root {
     --animate-duration: 2000ms;
     --animate-delay: 2s;
-    --primary: #fdfd96;
+    /* --primary: #fdfd96; */
+    --primary: #ffba75;
     --secondary: #101820;
     --third: #dfe2db;
   }
 
 *{
-    font-family: spaceGrotesk ;
+    font-family: spaceGrotesk, monospace;
     /* overflow-x: hidden; */
-
+    /* overflow-x: hidden; */
 }
 
 body{
@@ -20,11 +21,11 @@ body{
     /* background: radial-gradient(circle at center, #fff, #fee715 50%); */
     /* background: radial-gradient(circle at 30% 50%, white 30%, yellow 75%, yellow 75%); */
     background-repeat: no-repeat;
-    overflow-x: hidden;
 }
 .top{
     margin-top:69px;
-    background: radial-gradient(circle at center, #fff 10%, rgb(250, 244, 158), var(--primary) 30%);
+    /* background: radial-gradient(circle at center, #fff 10%, rgb(250, 244, 158), var(--primary) 30%); */
+    background: radial-gradient(circle at center, #fff 10%, var(--primary) 30%); */
     /* background: #fff; */
     background-repeat: no-repeat;
     text-align: center;
@@ -212,6 +213,9 @@ textarea.contact-form-text{
 
 
 @media (max-width: 767.98px) { 
+    *{
+        overflow-x: hidden;
+    }
     .intro:before{
         height: 0px;
         transform: skewY(0deg);
