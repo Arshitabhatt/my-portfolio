@@ -2,7 +2,7 @@
 :root {
     --animate-duration: 2000ms;
     --animate-delay: 2s;
-    --primary:  #f3e1e1;
+    --primary:  #f7d695;
     --secondary:#faf6e9 ;
     --third: #000;
   }
@@ -24,8 +24,8 @@ body{
 }
 .top{
     margin-top:69px;
-    background: radial-gradient(circle at center, #fff 10%, var(--primary) 30%);
-    /* background: #fff; */
+    /* background: radial-gradient(circle at center, #fff 10%, var(--primary) 30%); */
+    background: var(--primary);
     background-repeat: no-repeat;
     text-align: center;
     font-size: 1.2em;
