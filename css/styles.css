@@ -5,8 +5,10 @@
     /* --primary: #fdfd96; */
     --primary: #fab40b;
     /* --secondary: #101820; */
-    --secondary: #161515;
-    --third: #dfe2db;
+    --secondary: #f3f4f4;
+    --third: #161515;
+    /* --secondary: #f0f1b5;
+    --third: #161515; */
   }
 
 *{
