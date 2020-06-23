@@ -2,19 +2,15 @@
 :root {
     --animate-duration: 2000ms;
     --animate-delay: 2s;
-    /* --primary: #fdfd96; */
-    --primary: #fab40b;
-    /* --secondary: #101820; */
-    --secondary: #f3f4f4;
-    --third: #161515;
-    /* --secondary: #f0f1b5;
-    --third: #161515; */
+    --primary: #ffc38b;
+    --secondary: #4d3e3e;
+    --third: #fff3cd;
   }
 
 *{
-    font-family: spaceGrotesk, monospace;
+    font-family: spaceGrotesk;
     /* overflow-x: hidden; */
-    /* overflow-x: hidden; */
+
 }
 
 body{
@@ -24,11 +20,11 @@ body{
     /* background: radial-gradient(circle at center, #fff, #fee715 50%); */
     /* background: radial-gradient(circle at 30% 50%, white 30%, yellow 75%, yellow 75%); */
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 .top{
     margin-top:69px;
-    /* background: radial-gradient(circle at center, #fff 10%, rgb(250, 244, 158), var(--primary) 30%); */
-    background: radial-gradient(circle at center, #fff , var(--primary) 30%);
+    background: radial-gradient(circle at center, #fff 10%, var(--primary) 30%);
     /* background: #fff; */
     background-repeat: no-repeat;
     text-align: center;
@@ -81,7 +77,7 @@ body{
     border-radius: 50% 50%;
 }
 .navbar{
-    /* background: white; */
+    background:var(--primary);
 }
 
 #mainNavbar .nav-link{
@@ -101,10 +97,9 @@ body{
     border-bottom:2px solid var(--secondary);
 }
 .navbar.scrolled{
-    /*  background: var(--primary); */
-    background: white;
-    transition: background 1s; 
-    /* border-bottom: 1px solid var(--secondary); */
+    /* background: var(--primary);
+    transition: background 1s; */
+    border-bottom: 1px solid var(--secondary);
 }
 .navbar-brand img{
     width: 65px;
@@ -217,9 +212,6 @@ textarea.contact-form-text{
 
 
 @media (max-width: 767.98px) { 
-    *{
-        overflow-x: hidden;
-    }
     .intro:before{
         height: 0px;
         transform: skewY(0deg);
