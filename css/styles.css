@@ -3,7 +3,7 @@
     --animate-duration: 2000ms;
     --animate-delay: 2s;
     /* --primary: #fdfd96; */
-    --primary: #ffba75;
+    --primary: #eda815;
     --secondary: #101820;
     --third: #dfe2db;
   }
@@ -25,7 +25,7 @@ body{
 .top{
     margin-top:69px;
     /* background: radial-gradient(circle at center, #fff 10%, rgb(250, 244, 158), var(--primary) 30%); */
-    background: radial-gradient(circle at center, #fff 10%, var(--primary) 30%); */
+    background: radial-gradient(circle at center, #fff , var(--primary) 30%); */
     /* background: #fff; */
     background-repeat: no-repeat;
     text-align: center;
@@ -78,7 +78,7 @@ body{
     border-radius: 50% 50%;
 }
 .navbar{
-    background:var(--primary);
+    /* background: white; */
 }
 
 #mainNavbar .nav-link{
@@ -98,9 +98,10 @@ body{
     border-bottom:2px solid var(--secondary);
 }
 .navbar.scrolled{
-    /* background: var(--primary);
-    transition: background 1s; */
-    border-bottom: 1px solid var(--secondary);
+    /*  background: var(--primary); */
+    background: white;
+    transition: background 1s; 
+    /* border-bottom: 1px solid var(--secondary); */
 }
 .navbar-brand img{
     width: 65px;
