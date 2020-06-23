@@ -2,14 +2,15 @@
 :root {
     --animate-duration: 2000ms;
     --animate-delay: 2s;
-    --primary:  #9BE3DE;
-    --secondary:#faf6e9 ;
-    --third: #000;
+    --primary:  #df897a;
+    --secondary:#024861;
+    --third: #000
   }
 
 *{
     font-family: spaceGrotesk;
     /* overflow-x: hidden; */
+    /* color: #fff; */
 
 }
 
