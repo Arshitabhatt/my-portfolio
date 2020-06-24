@@ -15,12 +15,12 @@
         <link rel="stylesheet" href="/css/styles.css">
     </head>
     <body>
+
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
+        <![endif]--               
         <!-- NAVBAR -->
-        <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md fixed-top mb-5">
+        <!-- <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md fixed-top mb-5">
                 <a href="#" class="navbar-brand"><img src="/icons/Logos/0.75x/Logor7ldpi.png" alt=""></a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -37,19 +37,33 @@
                                 <a href="2" class="nav-link b pb-0"> CONTACT</a>
                             </li>
                         </ul>
-        
                     </div>
+            </nav> -->
+            <nav>
+                <div class="navbar-brand"><img src="/icons/Logos/0.75x/Logor7ldpi.png" alt=""></div>
+                <ul class="nav-links">
+                    <li><a href="#">ABOUT ME</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </nav>
+        <!-- i code magic
+        tea and ascii -->
 <!-- WELCOME -->
-        <div class="container">
-            <div class="top " data-aos="fade-up"> 
+        <div class="top " >
+            <div class="container" data-aos="fade-up"> 
                 <h1 class="display-3 pt-5">Namaste!</h1>
                 <h3 class="display-4">Welcome to my website</h3>
                 <!-- <p class>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic porro nobis in ut nemo distinctio at maxime, rem illo perspiciatis dignissimos rerum eos totam reiciendis sint dolorem minima facere culpa!</p> -->
             </div>
         </div>
 <!-- MY INTRODUCTION -->
-        <div class="intro row">
+        <div class="intro row" data-aos="zoom-in">
                 <div class="col-md-6 col-12 order-2 order-md-1 aboutme para" data-aos="fade-up">
                     <h3>I am Arshita Bhatt</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam, voluptatibus sunt unde enim minima sequi rerum asperiores quam, velit esse error animi veniam, repellat tempore doloribus praesentium omnis vero!</p>
@@ -123,13 +137,13 @@
         <div class="contact container mb-5" data-aos="fade-up">
             <!-- <img src="/icons/Logos/0.75x/Background2ldpi.png" alt=""> -->
             <h6 class="text-center display-4 pb-3" data-aos="fade-up">How can I contribute? Let me know below!</h6>
-            <form action="POST" class="contact-form" data-netlify="true">
+            <!-- <form action="POST" class="contact-form" data-netlify="true">
                 <input type="text" name="name" class="contact-form-text" placeholder="Your Name">
                 <input type="email" name="email" class="contact-form-text" placeholder="Your Email">
                 <textarea type="text" name="text" cols="30" rows="10" class="contact-form-text" placeholder="Share the ideas!"></textarea>
                 <div data-netlify-recaptcha></div>
                 <input type="submit"class="contact-form-btn" value="Send"></input>
-            </form>
+            </form> -->
         </div>
         
         
