@@ -109,6 +109,10 @@ body{
     transition: background 1s; */
     border-bottom: 1px solid var(--secondary);
 }
+.navbar-brand{
+    width: 65px;
+    z-index: 9;
+}
 .navbar-brand img{
     width: 65px;
 }
@@ -217,14 +221,16 @@ textarea.contact-form-text{
 }
 
 nav{
-    top:0;
+    /* width:100%; */
+    margin: 0;
+    padding:0;
     display:flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 10vh;
     background: #F03861;
-    position: sticky;
     z-index: 9;
+    position:sticky;
 }
 .nav-links{
     display:flex;
@@ -258,26 +264,33 @@ nav{
     body{
         overflow-x: hidden;
     }
+    nav{
+        position: sticky;
+        /* top: 0; */
+        /* width: 100%; */
+        /* margin: 0;
+        padding:0; */
+    }
     .nav-links{
-        z-index: 9;
         position: absolute;
         right:0px;
-        height:92vh;
+        height:30vh;
         top:8vh;
         background-color: #F03861;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width:50%;
-        transform: translateX(100%);
+        width:100%;
+        transform: translateY(-100%);
         transition: transform 0.5s ease-in;
-        
+        z-index: 5;
     }
     .nav-links li{
         opacity: 0;
     }
     .burger{
         display:block;
+        z-index: 9;
     }
     .intro:before{
         height: 0px;
@@ -304,16 +317,17 @@ nav{
 @keyframes navLinkFade{
     0%{
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateY(50px);
     }
     100%{
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 
 .nav-active{
-    transform: translateX(0%);
+    transform: translateY(0%);
+    left:0;
 }
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
