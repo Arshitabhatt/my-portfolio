@@ -49,12 +49,12 @@ body{
     margin:auto;
 }
 .top h1{
-    font-weight: 500px;
+    font-weight: 800px;
     font-size: 4.5em;
     line-height: 1.12;
 }
 .top h3{
-    font-weight: semi-bold;
+    font-weight: 500px;
     font-size: 2em;
     line-height: 1.2;
     margin:auto;
@@ -68,10 +68,15 @@ body{
 .intro{
     height:auto;
     background: #ffba5a;
-    color: var(--third);
+    /* color: var(--third); */
     width: 100%;
     margin: auto;
     position: relative;
+    box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.3);
+}
+.projects .row{
+    background: #bac964; 
+    height:auto;
 }
 
 /* .intro:before{
@@ -184,7 +189,7 @@ body{
     padding: 20px 40px;
     outline: none;
     background: var(--secondary);
-    color: var(--third);
+    /* color: var(--third); */
 }
 .contact-form-text:focus{
     box-shadow: 0 0 10px 4px var(--secondary);
@@ -235,7 +240,7 @@ nav{
 .nav-links a{
     text-decoration: none;
     letter-spacing: 3px;
-    color:#000;
+    color:#141d2e;
 }
 .nav-links li{
     list-style: none;
@@ -246,7 +251,7 @@ nav{
 .burger div{
     width: 25px;
     height: 3px;
-    background-color: #101820;
+    /* background-color: #101820; */
     margin: 5px;
     transition: all 0.3s ease
 
@@ -294,6 +299,11 @@ nav{
     }
     .nav-links li{
         opacity: 0;
+    }
+    .intro, .projects .row, .contact{
+        width:90%;
+        margin:auto;
+
     }
     .burger{
         display:block;
