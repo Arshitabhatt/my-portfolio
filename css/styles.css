@@ -3,7 +3,7 @@
 :root {
     --animate-duration: 2000ms;
     --animate-delay: 2s;
-    --primary:  #b0d7da;
+    --primary:   #cbe2b0; 
     --secondary:#b0d7da;
     --third: #000;
   }
@@ -12,28 +12,28 @@
     font-family: spaceGrotesk;
     /* overflow-x: hidden; */
     color: #141d2e;
+    scroll-behavior: smooth;
 }
 
 body{
     background: url('/icons/Logos/bg-22.gif') no-repeat center center fixed;
     background-size: cover;
+    /* #ffba5a  orange*/
+    /* 436f8a - dark blue */
+    /* #bac964- green*/
     /* color: #101820; */
     /* color: #1391919; */
     /* background: #cbe2b0; */
-    /* background: radial-gradient(circle at center, #fff, #fee715 50%); */
-    /* background: radial-gradient(circle at 30% 50%, white 30%, yellow 75%, yellow 75%); */
-    /* background-repeat: no-repeat; */
     overflow-x: hidden;
+}
+.intro , .projects .row, .contact{
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
 }
 
 .top{
     /* position:absolute; */
     /* top:0; */
     width:100%;
-    /* color:#fff; */
-    /* background: radial-gradient(circle at center, #fff 10%, var(--primary) 30%); */
-    /* background: url('/icons/Logos/bg-22.gif') no-repeat center center fixed; */
-    /* background-repeat: no-repeat; */
     background-size: cover;
     text-align: center;
     font-size: 1.2em;
@@ -49,12 +49,12 @@ body{
     margin:auto;
 }
 .top h1{
-    font-weight: 800px;
+    font-weight: 500px;
     font-size: 4.5em;
     line-height: 1.12;
 }
 .top h3{
-    font-weight: 500px;
+    font-weight: semi-bold;
     font-size: 2em;
     line-height: 1.2;
     margin:auto;
@@ -67,16 +67,11 @@ body{
 }
 .intro{
     height:auto;
-    background: #ffba5a;
+    background: var(--primary);
     /* color: var(--third); */
     width: 100%;
     margin: auto;
     position: relative;
-    box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.3);
-}
-.projects .row{
-    background: #bac964; 
-    height:auto;
 }
 
 /* .intro:before{
@@ -125,46 +120,50 @@ body{
 }
 .projects{
     /* background: var(--primary); */
-    /* width:175px; */
+    width:90%;
     position: relative;
+}
+.projects .row{
+    background: var(--primary); 
+    height:auto;
+    width: 100%;
+    margin:auto;
 }
 
 .projects .card{
-    margin:auto;
-    padding:auto;
+    /* position: relative; */
+    margin:2rem;
     /* border-radius: 5%; */
     box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.3);
     /* background: var(--primary); */
     /* color: var(--third); */
+    transition: 0.7s ease-out;
 }
 .projects .card:hover{
     box-shadow: none;
     transition: 0.7s ease-in-out;
-}
 
+}
 
 .projects li{
     /* background: var(--secondary);
     color: var(--third); */
 }
 
-.project-divider{
-    padding: 0;
-    margin: 0;
-    width: 17.7em;
-    border-bottom: 0.2px solid var(--third);
-    /* box-shadow: 0px 0px 2px 2px var(--third); */
-}
 
-.contact{
+.contact-head{
+    margin-top:10rem;
+}
+.contact div{
     /* margin-top:100px; */
     /* padding: 30px 50px 60px; */
-    /* margin-top:100px; */
-    /* background: var(--primary); */
+    /* padding-top:100px; */
+    background: var(--primary);
     /* background-size: 200pkx 200px; */
     /* border:10px solid beige; */
     height: 450px;
 }
+
 .partial{
     bottom:-15px;
     font-size:4rem;
@@ -189,7 +188,7 @@ body{
     padding: 20px 40px;
     outline: none;
     background: var(--secondary);
-    /* color: var(--third); */
+    color: var(--third);
 }
 .contact-form-text:focus{
     box-shadow: 0 0 10px 4px var(--secondary);
@@ -227,10 +226,14 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: var(--primary);
+    background: var(--secondary);
     z-index: 15;
     position:fixed;
 }
+/* .intro, .projects .row, .contact{
+    width:90%;
+    margin:auto;
+} */
 .nav-links{
     margin:0px;
     display:flex;
@@ -240,7 +243,7 @@ nav{
 .nav-links a{
     text-decoration: none;
     letter-spacing: 3px;
-    color:#141d2e;
+    color:#000;
 }
 .nav-links li{
     list-style: none;
@@ -251,7 +254,7 @@ nav{
 .burger div{
     width: 25px;
     height: 3px;
-    /* background-color: #101820; */
+    background-color: #101820;
     margin: 5px;
     transition: all 0.3s ease
 
@@ -288,7 +291,7 @@ nav{
         right:0px;
         height:30vh;
         top:8vh;
-        background-color: var(--primary);
+        background-color: var(--secondary);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -297,13 +300,12 @@ nav{
         transition: transform 0.5s ease-in;
         z-index: 5;
     }
-    .nav-links li{
-        opacity: 0;
-    }
     .intro, .projects .row, .contact{
         width:90%;
         margin:auto;
-
+    }
+    .nav-links li{
+        opacity: 0;
     }
     .burger{
         display:block;
@@ -354,4 +356,10 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.footer{
+    padding: 20px 0;
+    background:var(--secondary);
+    text-align:center
 }
