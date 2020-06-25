@@ -30,23 +30,26 @@ body{
     width:100%;
     /* color:#fff; */
     /* background: radial-gradient(circle at center, #fff 10%, var(--primary) 30%); */
-    background: url('/icons/Logos/bg-3.gif') no-repeat center center fixed;
+    background: url('/icons/Logos/bg-22.gif') no-repeat center center fixed;
     /* background-repeat: no-repeat; */
     background-size: cover;
-    /* text-align: center; */
+    text-align: center;
     font-size: 1.2em;
     height: 92vh; 
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin: auto 0;
+}
+.cont{
+    margin:auto;
 }
 .top h1{
-    padding-top: 100px;
-    font-weight: semi-bold;
-    font-size: 4em;
+    font-weight: 500px;
+    font-size: 4.5em;
     line-height: 1.12;
-    text-align: center
 }
 .top h3{
     font-weight: semi-bold;
@@ -54,44 +57,51 @@ body{
     line-height: 1.2;
     margin:auto;
 }
+.top img{
+    width: 45vh;
+    height: 45vh;
+    border-radius: 50% 50%;
+    /* box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.5); */
+}
 .intro{
-    height:500px;
+    height:auto;
     background: var(--primary);
     color: var(--third);
-    /* width: 400px; */
+    width: 100%;
+    margin: auto;
     position: relative;
 }
 
 .intro:before{
+    z-index:3;
     content:'';
     width: 50.3%;
-    height: 53px;
+    height: 100px;
     position: absolute;
-    top: -28px;
+    top: -50px;
     left: 0;
     background:var(--primary);
-    transform: skewY(4deg);
+    transform: skewY(7deg);
 }
 .intro:after{
+    z-index:3;
     content:'';
     width: 50.3%;
-    height: 53px;
+    height: 100px;
     position: absolute;
-    top: -28px;
+    top: -50px;
     right: 0;
     background:var(--primary);
-    transform: skewY(-4deg);
+    transform: skewY(-7deg);
 }
 .intro img{
-    width: 250px;
-    height: 250px;
-    border-radius: 50% 50%;
+    margin: 70px auto;
+    height: 55vh;
 }
-
-.navbar.scrolled{
-    /* background: var(--primary);
-    transition: background 1s; */
-    border-bottom: 1px solid var(--secondary);
+.my-img{
+    z-index:10;
+    border-radius: 5%;
+    height: 250px;
 }
 .navbar-brand{
     width: 65px;
@@ -111,34 +121,18 @@ body{
     /* width:175px; */
     position: relative;
 }
-.projects:before{
-    content:'';
-    width: 50.3%;
-    height: 50px;
-    position: absolute;
-    top: -25px;
-    left: 0;
-    background:var(--primary);
-    transform: skewY(-4deg);
-}
-.projects:after{
-    content:'';
-    width: 50.3%;
-    height: 50px;
-    position: absolute;
-    top: -25px;
-    right: 0;
-    background:var(--primary);
-    transform: skewY(4deg);
-}
 
 .projects .card{
     margin:auto;
     padding:auto;
     border-radius: 5%;
-    box-shadow: 0px 10px 12px rgba(0,0,0, 0.7);
+    box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.3);
     background: var(--primary);
     color: var(--third);
+}
+.projects .card:hover{
+    box-shadow: none;
+    transition: 0.7s ease-in-out;
 }
 
 .projects li{
@@ -217,6 +211,7 @@ nav{
     position:sticky;
 }
 .nav-links{
+    margin:0px;
     display:flex;
     justify-content: space-around;
     width: 30%;
@@ -241,11 +236,14 @@ nav{
 
 }
 
-/* @media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1250px) { 
     .nav-links{
         width: 50%;
     }
-} */
+    .intro-img{
+        height: 47vh;
+    }
+}
 
 
 @media screen and (max-width: 767.98px) { 
@@ -253,7 +251,8 @@ nav{
         overflow-x: hidden;
     }
     nav{
-        position: sticky;
+        /* position: sticky; */
+        width:100%;
         /* top: 0; */
         /* width: 100%; */
         /* margin: 0;
@@ -288,17 +287,11 @@ nav{
         height: 0px;
         transform: skewY(0deg);
     }
-    .projects:before{
-        height: 0px;
-        transform: skewY(0deg);
+
+    .intro img{
+        height: 35vh;
     }
-    .projects:after{
-        height: 0px;
-        transform: skewY(0deg);
-    }
-    #mainNavbar .b:hover{
-        border-bottom:2px solid var(--secondary); 
-    }
+
 
 }
 
