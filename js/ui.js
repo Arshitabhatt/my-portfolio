@@ -37,7 +37,7 @@ navSlide()
 
 
 var typed2 = new Typed('.element', {
-    strings: ['This area types random stuff', 'Every life weaves it own fairytales', 'I code magic ♥', 'Tea and ASCII ☕'],
+    strings: ['This area types random stuff', 'Every life weaves it own fairytales', 'I code magic ♥', 'Tea and ASCII ☕', 'Made in 2020'],
     typeSpeed: 80,
     backDelay: 500,
     // fadeOut: true,
