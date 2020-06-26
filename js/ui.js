@@ -28,7 +28,9 @@ const navSlide = ()=>{
         burger.classList.toggle('toggle')
         // nav.style.height = "100%";
     })
-   
+    // navLinks.addEventListener('click', () => {
+    //     nav.classList.add('nav-collapse')
+    // })   
 }
 navSlide()
 

@@ -49,12 +49,12 @@ body{
     margin:auto;
 }
 .top h1{
-    font-weight: 500px;
+    font-weight: 800;
     font-size: 4.5em;
     line-height: 1.12;
 }
 .top h3{
-    font-weight: semi-bold;
+    font-weight: 500;
     font-size: 2em;
     line-height: 1.2;
     margin:auto;
@@ -63,7 +63,7 @@ body{
     width: 45vh;
     height: 45vh;
     border-radius: 50% 50%;
-    /* box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.5); */
+    box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.5);
 }
 .intro{
     height:auto;
@@ -121,13 +121,13 @@ body{
 .projects{
     /* background: var(--primary); */
     width:90%;
-    position: relative;
+    /* position: relative; */
 }
 .projects .row{
     background: var(--primary); 
     height:auto;
-    width: 100%;
-    margin:auto;
+    /* width: 90%;
+    margin:auto; */
 }
 
 .projects .card{
@@ -136,18 +136,23 @@ body{
     /* border-radius: 5%; */
     box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.3);
     /* background: var(--primary); */
-    /* color: var(--third); */
+    color: #f7fbe1;
     transition: 0.7s ease-out;
+    width: 18rem;
 }
 .projects .card:hover{
     box-shadow: none;
     transition: 0.7s ease-in-out;
 
 }
-
+.project .col-12{
+    display: flex;
+    justify-content:center;
+    align-item: center
+}
 .projects li{
-    /* background: var(--secondary);
-    color: var(--third); */
+    background: #f7fbe1;
+    color: var(--third);
 }
 
 
@@ -161,7 +166,7 @@ body{
     background: var(--primary);
     /* background-size: 200pkx 200px; */
     /* border:10px solid beige; */
-    height: 450px;
+    height: auto;
 }
 
 .partial{
@@ -174,34 +179,11 @@ body{
     position: relative;
     line-height: 0.6em;
 }
-.contact-form{
-    max-width: 600px;
-    margin: auto;
-    padding: 0 10px;
-}
-.contact-form-text{
-    display: block;
-    width: 100%;
-    box-sizing:border-box;
-    margin: 16px 0;
-    border:0;
-    padding: 20px 40px;
-    outline: none;
-    background: var(--secondary);
-    color: var(--third);
-}
-.contact-form-text:focus{
-    box-shadow: 0 0 10px 4px var(--secondary);
-}
-textarea.contact-form-text{
-    resize:none;
-    height:120px;
-}
 .contact-form-btn{
-    float:right;
+    /* float:right; */
     border:1px solid var(--secondary);
     background: var(--primary);
-    color: var(--secondary);
+    color: var(--third);
     padding: 12px 50px;
     cursor: pointer; 
     /* box-shadow: 0 0 10px 4px var(--secondary); */
@@ -213,6 +195,7 @@ textarea.contact-form-text{
 .contact-form-btn:hover{
     /* background: var(--secondary); */
     color:var(--third);
+
      /* transition: 0.5s; */
      background-size:100% 100%;
 }
@@ -229,6 +212,7 @@ nav{
     background: var(--secondary);
     z-index: 15;
     position:fixed;
+    box-shadow: 0px 1px 5px rgba(60, 59, 59, 0.3);
 }
 /* .intro, .projects .row, .contact{
     width:90%;
@@ -243,7 +227,7 @@ nav{
 .nav-links a{
     text-decoration: none;
     letter-spacing: 3px;
-    color:#000;
+    color:#141d2e;
 }
 .nav-links li{
     list-style: none;
@@ -289,7 +273,7 @@ nav{
     .nav-links{
         position: absolute;
         right:0px;
-        height:30vh;
+        height:40vh;
         top:8vh;
         background-color: var(--secondary);
         display: flex;
@@ -300,7 +284,7 @@ nav{
         transition: transform 0.5s ease-in;
         z-index: 5;
     }
-    .intro, .projects .row, .contact{
+    .intro, .projects, .contact{
         width:90%;
         margin:auto;
     }
@@ -329,7 +313,9 @@ nav{
     .intro img{
         height: 35vh;
     }
-
+    .footer{
+        margin-bottom: 0px;
+    }
 
 }
 
@@ -348,6 +334,9 @@ nav{
     transform: translateY(0%);
 
 }
+.nav-collapse{
+    transform: translateY(-100%);
+}
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -363,3 +352,47 @@ nav{
     background:var(--secondary);
     text-align:center
 }
+.footer i{
+    bottom:0;
+}
+.footer .icon-top{
+background: green;
+width:15%;
+}
+
+
+.sci{
+    /* position: absolute;  */
+    display: flex;
+    flex-direction: row;
+    /* left:200px; */
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+    padding:0;
+  }
+  
+  .sci li{
+    list-style:none;
+  }
+  .sci li a{
+    padding:0px;
+    position: relative;
+    display:grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border: 1px solid #000;
+    margin-right: 10px;
+  }
+  .sci li a:hover{
+    /* background:rgb(246, 234, 6); */
+    background:#000;
+  }
+  .sci li a img{
+    max-width: 20px;
+    align-items: center;
+    filter: invert(1);
+    mix-blend-mode: difference;
+  }
