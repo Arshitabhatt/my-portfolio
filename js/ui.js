@@ -7,7 +7,7 @@ $(function () {
 
 AOS.init({
     duration: 1500,
-    once: false});
+    once: true});
 
 
 
@@ -43,3 +43,11 @@ var typed2 = new Typed('.element', {
     // fadeOut: true,
     loop: true
   });
+
+
+  $(function () {
+    $(document).scroll(function () {
+        var $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    });
+});
