@@ -16,8 +16,8 @@
 }
 
 body{
-    background: url('/icons/Logos/bg-22.gif') no-repeat center center fixed;
-    background-size: cover;
+    /* background: url('/icons/Logos/bg-22.gif') no-repeat center center fixed;
+    background-size: cover; */
     /* #ffba5a  orange*/
     /* 436f8a - dark blue */
     /* #bac964- green*/
@@ -27,12 +27,17 @@ body{
     overflow-x: hidden;
 }
 .intro , .projects .row, .contact{
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4); */
 }
 
 .top{
     /* position:absolute; */
     /* top:0; */
+    background: url('/icons/Logos/bg-22.gif') no-repeat center center fixed;
+    background-size: cover;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius:50%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
     width:100%;
     background-size: cover;
     text-align: center;
