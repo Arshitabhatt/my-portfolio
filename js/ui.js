@@ -28,9 +28,14 @@ const navSlide = ()=>{
         burger.classList.toggle('toggle')
         // nav.style.height = "100%";
     })
-    // navLinks.addEventListener('click', () => {
-    //     nav.classList.add('nav-collapse')
-    // })   
+    const a = document.querySelectorAll('.nav-links a')
+    a.forEach((navs) =>{
+        navs.addEventListener('click', ()=>{
+            // nav.classList.remove('nav')
+            // burger.classList.remove('toggle')
+        })
+    })
+
 }
 navSlide()
 

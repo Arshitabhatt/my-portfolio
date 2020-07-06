@@ -184,11 +184,11 @@ body{
 }
 .projects .card-title{
     font-size: 1.45rem;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    /* text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
     0 2px 2px rgba(0,0,0,0.11), 
     0 4px 4px rgba(0,0,0,0.11), 
     0 6px 8px rgba(0,0,0,0.11),
-    0 8px 16px rgba(0,0,0,0.11);
+    0 8px 16px rgba(0,0,0,0.11); */
 
 }
 
@@ -290,13 +290,6 @@ nav{
     .nav-links{
         width: 50%;
     }
-    .top img{
-        width: 250px;
-        height:250px;
-    }
-    .intro img{
-        height: 47vh;
-    }
 }
 
 
@@ -382,7 +375,7 @@ nav{
         transform: skewY(0deg);
     }
     .intro img{
-        height: 35vh;
+        height: 40vh;
     }
     .footer{
         margin-bottom: 0px;
@@ -409,7 +402,18 @@ nav{
 
 }
 .nav-collapse{
-    transform: translateY(-100%);
+        position: absolute;
+        right:0px;
+        height:0vh;
+        top:8vh;
+        background-color: var(--secondary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease-in;
+        z-index: 5;
 }
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
@@ -422,7 +426,6 @@ nav{
 }
 
 .footer{
-    
     padding: 20px 0;
     background:var(--secondary);
     text-align:center;
