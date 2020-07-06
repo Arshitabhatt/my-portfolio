@@ -50,17 +50,6 @@ body{
     align-items: center;
     width: 100%;
     margin: auto auto 50px 0px;
-    /* border:1px solid grey; */
-    /* border-bottom-left-radius: 10% 40% ;
-    border-top-right-radius: 10% 40%;
-    border-bottom-right-radius: 10% 40%; 
-    border-top-left-radius: 10% 40%; */
-    /* box-shadow:inset 0 1px 1px rgba(0,0,0,0.11), 
-    inset 0 2px 2px rgba(0,0,0,0.11), 
-    inset 0 4px 4px rgba(0,0,0,0.11), 
-    inset 0 6px 8px rgba(0,0,0,0.11),
-    inset 0 8px 16px rgba(0,0,0,0.11); */
-    
     text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
     0 2px 2px rgba(0,0,0,0.11), 
     0 4px 4px rgba(0,0,0,0.11), 
@@ -81,6 +70,24 @@ body{
     line-height: 1.2;
     margin:auto;
 }
+
+.top hr{
+    /* border-top: 1px solid black; */
+    display:block;
+    width: 50%;
+    height: 3px;
+    background:#000;
+    border: none;
+    margin: auto;
+    transition: width 1s;
+    margin-bottom: 20px;
+
+}
+.top:hover hr{
+    width: 70%;
+    transition: width 1s;
+}
+
 .intro{
     height:auto;
     background: var(--primary);
@@ -93,28 +100,7 @@ body{
     margin:auto;
     padding-top: 50px;
 }
-/* .intro:before{
-    z-index:3;
-    content:'';
-    width: 50.3%;
-    height: 100px;
-    position: absolute;
-    top: -50px;
-    left: 0;
-    background:var(--primary);
-    transform: skewY(7deg);
-}
-.intro:after{
-    z-index:3;
-    content:'';
-    width: 50.3%;
-    height: 100px;
-    position: absolute;
-    top: -50px;
-    right: 0;
-    background:var(--primary);
-    transform: skewY(-7deg);
-} */
+
 .intro img{
     margin: 70px auto;
     height: 60vh;
@@ -124,7 +110,7 @@ body{
     border-radius: 1px;
     border-right: 2px solid black;
     height: 200px;
-    margin:auto 0;
+    margin:auto 0; 
     padding: 0;
     width:10px;
     transition: height 1s;
@@ -172,10 +158,16 @@ body{
 .projects .card{
     /* position: relative; */
     margin: auto;
-    /* border-radius: 5%; */
+    border-radius: 5px;
     /* box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.3); */
     /* background: var(--primary); */
     width: 18rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+    0 2px 2px rgba(0,0,0,0.20), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.10),
+    0 16px 16px rgba(0,0,0,0.05);
+    transition: box-shadow .7s;
 }
 .card-body a{
     display: flex;
@@ -190,9 +182,14 @@ body{
     justify-content:center;
     align-item: center;
 }
-.projects li{
-    /* background: #f7fbe1; */
-    /* color: var(--third); */
+.projects .card-title{
+    font-size: 1.45rem;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+
 }
 
 .contact-head{
@@ -232,7 +229,7 @@ body{
     cursor: pointer; 
     background: linear-gradient(to right, #000, #000);
     background-repeat: no-repeat;
-    background-size: 0 100%;
+    background-size: 0% 100%;
     transition: background-size 0.3s 0s;
 }
 .contact-form-btn:hover{
@@ -240,7 +237,7 @@ body{
     color:var(--third);
     text-decoration: none;
      /* transition: 0.5s; */
-     background-size:100% 100%;
+     background-size:100% 100% ;
 }
 
 nav{
@@ -478,4 +475,32 @@ width:15%;
     align-items: center;
     filter: invert(1);
     mix-blend-mode: lighten;
+  }
+
+  .cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+     /* transition: width .3s;  */
+  }
+  
+  .cool-link:hover {
+    width: 100%;
+    transition: width .3s;
+  }
+  .card-body hr{
+    width: 50%;
+    height: 3px;
+    background:#000;
+    border: none;
+    margin: auto;
+    transition: width 1s;
+    margin-bottom: 20px;
+
+  }
+  .card-body:hover hr{
+    width: 70%;
+    transition: width 1s;
   }

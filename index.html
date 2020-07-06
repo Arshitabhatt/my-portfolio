@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel = "icon" type = "image/png" href = "/icons/Logos/0.75x/Logor1ldpi.png">
+        <link rel = "icon" type = "image/png" href = "/icons/Logos/Faviconldpi.png">
         <title> Arshita Bhatt</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,11 +26,11 @@
             <nav class="nav-bar" id="mainNavbar">
                 <div class="navbar-brand"><a href="#top"><img src="/icons/Logos/0.75x/logor-white.png" alt=""></a></div>
                 <ul class="nav-links">
-                    <li><a href="#top">HOME</a></li>
-                    <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#blogs">BLOGS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a class="cool-link" href="#top">HOME</a></li>
+                    <li><a class="cool-link" href="#aboutme">ABOUT ME</a></li>
+                    <li><a class="cool-link" href="#projects">PROJECTS</a></li>
+                    <li><a class="cool-link" href="#blogs">BLOGS</a></li>
+                    <li><a class="cool-link" href="#contact">CONTACT</a></li>
                 </ul>
                 <div class="burger">
                     <div class="line1"></div>
@@ -74,13 +74,13 @@
                         <p>I'm also a book detective who causually peeps into your titles 
                             & find all about it's plot in minutes, I love to speak out my ideas,
                              I occasionally likes to pass on random facts about a thing or two.</p>
-                        <div class="my-5"><a href="https://docs.google.com/gview?url=https://github.com/Arshitabhatt/Resume/raw/master/Resume_Arshitabhatt_2020_Updated.pdf&embedded=true" class="contact-form-btn">Resume</a></div>
+                        <p class="my-5"><a href="https://docs.google.com/gview?url=https://github.com/Arshitabhatt/Resume/raw/master/Resume_Arshitabhatt_2020_Updated.pdf&embedded=true" class="contact-form-btn">Resume</a></p>
                              
                 </div>
                 <div class=" col-md-1 order-md-2 v1"></div>
                 <hr class="order-2" >
                 <div class="col-md-5 col-12 order-1 order-md-3 aboutme">
-                        <!-- <img class="img-fluid my-img" src="/icons/Logos/2x/2x/Image2xhdpi.png"> -->
+                        <img class="img-fluid my-img" src="/icons/Image2xhdpi.png">
                 </div>
         </div>
         <span id="projects"></span>
@@ -95,7 +95,8 @@
                         <div class="card" >
                             <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
                             <div class="card-body">
-                                <h5 class="card-title text-center">YelpCamp</h5>
+                                <h5 class="card-title text-center"><b>YelpCamp</b></h5>
+                                <hr>
                                 <p class="card-text">This project was part of certification course done from udemy "Web development Bootcamp". It's a full stack website to to find and book camping grounds</p>
                             </div>
                             
@@ -115,7 +116,8 @@
                         <div class="card">
                             <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
                             <div class="card-body">
-                                <h5 class="card-title text-center">Classification of Architecture style</h5>
+                                <h5 class="card-title text-center"><b>Classification of Architecture style</b></h5>
+                                <hr>
                                 <p class="card-text">This is an image classification project in which CNN model is used to classify 24 classes of architectural styles found around the world. 
                                     This project is an implementation of transfer learning </p>
                             </div>
@@ -129,22 +131,43 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 pb-3">
+                    <div class="col-md-6 col-12 pb-3 pt-5">
                         
                         <div class="card">
-                            <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
-                            
                             <div class="card-body">
                                 <h5 class="card-title text-center">Readsnet</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <hr>
+                                <p class="card-text">This is a internship project where I developed a MERN stack website for Redsnet to showcase their past/present/upcoming events, register to collaborative events with them, etc 
+                                    and a static introductory website. Graphics were provided my the company</p>
                             </div>
                             
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class="list-group-item">
+                                    <div>Frontend : ReactJS | CSS </div>  
+                                    <div>Backend : Nodejs | Expressjs | MongoDB</div>
+                                </li>
                             </ul>
                             
                             <div class="card-body">
-                                <a href="#" class="card-link contact-form-btn">View on GitHub</a>
+                                <a href="https://github.com/Arshitabhatt/readsnet-demo" class="card-link contact-form-btn">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 pb-3 pt-5">
+                        <div class="card">
+                            <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><b>PyTorch's Tensors</b></h5>
+                                <hr>
+                                <p class="card-text">In this notebook I talk about some useful PyTorch function and how to work with tensors. This eas a part of course for learning PyTorch on FreeCodeCamp</p>
+                            </div>
+                            
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"> Python | PyTorch | Numpy | Matplotlib</li>
+                            </ul>
+                            
+                            <div class="card-body">
+                                    <a href="https://www.kaggle.com/aarshibhatt112/coolest-pytorch-tensors" class="card-link contact-form-btn">View on Kaggle</a>
                             </div>
                         </div>
                     </div>
@@ -162,16 +185,17 @@
                         <div class="card" >
                             <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
                             <div class="card-body">
-                                <h5 class="card-title text-center">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title text-center">What is the architecture style of this building?</h5>
+                                <hr>
+                                <p class="card-text">In this blog I disscuss in a step by step and beignner friendly manner about to how to work a dataset from scratch to train a image classifcation model.</p>
                             </div>
                             
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class="list-group-item text-center">Machine Learning</li>
                             </ul>
                             
                             <div class="card-body">
-                                <a href="#" class="card-link">Another link</a>
+                                <a href="" class="card-link contact-form-btn">Read on Medium</a>
                             </div>
                         </div>
                     </div>
@@ -179,16 +203,17 @@
                         <div class="card">
                             <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
                             <div class="card-body">
-                                <h5 class="card-title text-center">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h5 class="card-title text-center">Explore World's coolest tensor using PyTorch</h5>
+                                <hr>
+                                <p class="card-text">In this notebook, I talk about what tensors are and how to work with then using functions in PyTorch</p>
                             </div>
                             
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Vestibulum at eros</li>
+                                <li class="list-group-item text-center">Machine Learning</li>
                             </ul>
                             
                             <div class="card-body">
-                                <a href="#" class="card-link">Another link</a>
+                                <a href="" class="card-link contact-form-btn">Read on Medium</a>
                             </div>
                         </div>
                     </div>
