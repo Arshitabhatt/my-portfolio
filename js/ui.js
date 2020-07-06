@@ -56,3 +56,8 @@ var typed2 = new Typed('.element', {
         $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
     });
 });
+
+$('#projects').click(function($e) {
+    $e.preventDefault();
+    doSomething();
+});
