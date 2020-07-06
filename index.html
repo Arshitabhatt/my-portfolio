@@ -6,7 +6,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Portfolio</title>
+        <link rel = "icon" type = "image/png" href = "/icons/Logos/0.75x/Logor1ldpi.png">
+        <title> Arshita Bhatt</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
@@ -22,8 +23,8 @@
         <![endif]--               
         <!-- NAVBAR -->
 
-            <nav>
-                <div class="navbar-brand"><a href="#top"><img src="/icons/Logos/0.75x/Logor6ldpi.png" alt=""></a></div>
+            <nav class="nav-bar" id="mainNavbar">
+                <div class="navbar-brand"><a href="#top"><img src="/icons/Logos/0.75x/logor-white.png" alt=""></a></div>
                 <ul class="nav-links">
                     <li><a href="#top">HOME</a></li>
                     <li><a href="#aboutme">ABOUT ME</a></li>
@@ -41,13 +42,13 @@
         tea and ascii -->
 <!-- WELCOME -->
         <div class="top" id="top">
-            <div class="container top-sentence row" data-aos="fade-up"> 
-                <div class="col-md-12 col-12 cont">
-                    <h1 class="display-3">I'm Arshita</h1>
-                    <h3 class="display-4">A web developer and machine learning enthusiasts</h3>
-                    </div>
+            <div class="container top-sentence" data-aos="fade-up"> 
+                <div class="cont">
+                    <h1 class="display-3"><span>I'm </span>Arshita Bhatt</h1>
+                    <h3 class="display-4">A web devloper and machine learning enthusiast</h3>
+            </div>
                 <!-- <div class="col-12 col-md-6">
-                    <img class="img-fluid"src="/icons/light-bulb-rocket-design_1270-83.jpg" alt="">
+                    <img src="/icons/Logos/bg-22.gif" alt="">
                 </div> -->
         </div>
         <div id="aboutme"></div>
@@ -56,13 +57,18 @@
 <div> 
     <h3 class="text-center display-4 partial" data-aos="fade-up">About Me</h3>
         <div class="intro row container">
-                <div class="col-md-6 col-12 order-2 order-md-1 aboutme para" data-aos="fade-up">
-                    <h3>I am Arshita Bhatt</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam, voluptatibus sunt unde enim minima sequi rerum asperiores quam, velit esse error animi veniam, repellat tempore doloribus praesentium omnis vero!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, earum vel consectetur in maiores pariatur doloremque repellat, dignissimos deleniti, voluptatem facere! Aliquid quasi excepturi maiores sed placeat repudiandae saepe doloremque.</p>
+                <div class="col-md-6 col-12 order-3 order-md-1 aboutme para">
+                        <h3>Hello!</h3>
+                        <p>I'm a Delhi-NCR based computer science engineer, who likes to develop simple & here-to-stay websites as well as apply machine learning/deep learning for research-based projects.</p>
+                        <p>I'm an avid learner who is always ready to pick up new skills, A thinker who tries to find ways & apply them to make things work, A contant evolver who likes to work with the flow.</p>
+                        <p>I'm also a book detective who causually peeps into your titles & find all about it's plot in minutes, I love to speak out my ideas, I occasionally dream about Biology, worlds beyond Earth & likes to pass on random facts about a thing or two.</p>
+                        <div class="my-5"><a href="https://docs.google.com/gview?url=https://github.com/Arshitabhatt/Resume/raw/master/Resume_Arshitabhatt_2020_Updated.pdf&embedded=true" class="contact-form-btn">Resume</a></div>
+                             
                 </div>
-                <div class="col-md-6 col-12 order-1 order-md-2 aboutme" data-aos="fade-up" data-aos-anchor=".para">
-                        <img class="img-fluid img-thumbnail my-img" src="/icons/photo.PNG">
+                <div class=" col-md-1 order-md-2 v1"></div>
+                <hr class="order-2" >
+                <div class="col-md-5 col-12 order-1 order-md-3 aboutme">
+                        <img class="img-fluid my-img" src="/icons/Asset 1xhdpi.png">
                 </div>
         </div>
         <span id="projects"></span>
@@ -73,7 +79,7 @@
             <div class="" >
                     <h6 class="text-center display-4 partial contact-head" data-aos="fade-up">Projects</h6>
                 <div class="row">
-                    <div class="col-md-6 col-12 pb-3 pt-5" data-aos="zoom-in">
+                    <div class="col-md-6 col-12 pb-3 pt-5">
                         <div class="card" >
                             <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
                             <div class="card-body">
@@ -90,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 pb-3 pt-5" data-aos="zoom-in">
+                    <div class="col-md-6 col-12 pb-3 pt-5">
                         <div class="card">
                             <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
                             <div class="card-body">
@@ -107,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 pb-3" data-aos="zoom-in">
+                    <div class="col-md-6 col-12 pb-3">
                         
                         <div class="card">
                             <!-- <img src="/icons/download.jpeg" class="card-img-top" alt="..."> -->
@@ -133,14 +139,14 @@
         <!-- CONTACT -->
         <div class="mb-5 container contact-head" >
             <div class="m-5"></div>
-            <h1 class="partial display-3 text-center" data-aos="fade-up">Hello There!</h1>
+            <h1 class="partial display-3 text-center" data-aos="fade-up">Let's Connect</h1>
             <div class="contact">
                 <div class="p-5 text-center">
-                    <h2>Got Some cool ideas to discuss</h3>
+                    <h2>Got Some cool ideas to discuss?</h3>
                     <h4 >Reach out to me!</h4>
-                    <div style="">
+                    <div>
                         <ul class="sci">
-                            <li><a href="mailto:aarshibhatt112@gmail.com"><img src="/icons/Logos/gmail.jpg" alt=""></a></li>
+                            <li><a href="mailto:aarshibhatt112@gmail.com"class="contact-form-btn"><img src="/icons/Logos/gmail.jpg" alt=""></a></li>
                             <li><a href="https://www.linkedin.com/in/arshitabhatt/"><img src="/icons/Logos/linkedin.png" alt=""></a></li>
                             <li><a href="https://github.com/Arshitabhatt"><img src="/icons/Logos/github.png" alt=""></a></li>
                             <li><a href="https://twitter.com/Arshitabhatt"><img src="/icons/Logos/twitter.png" alt=""></a></li>
