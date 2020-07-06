@@ -177,9 +177,13 @@ body{
     /* background: var(--primary); */
     width: 18rem;
 }
-.projects .card:hover{
-    box-shadow: none;
-    transition: 0.7s ease-in-out;
+.card-body a{
+    display: flex;
+    flex-direction: row;
+    /* left:200px; */
+    justify-content: center;
+    align-items:center;
+    margin:auto;
 }
 .project .col-12{
     display: flex;
