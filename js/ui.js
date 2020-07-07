@@ -30,10 +30,7 @@ const navSlide = ()=>{
     })
     const a = document.querySelectorAll('.nav-links a')
     a.forEach((navs) =>{
-        navs.addEventListener('click', ()=>{
-            // nav.classList.remove('nav')
-            // burger.classList.remove('toggle')
-        })
+
     })
 
 }
@@ -57,3 +54,23 @@ var typed2 = new Typed('.element', {
     });
 });
 
+
+
+$('.navbar a').on('click', function (e) {
+      if (this.hash !== '') {
+        e.preventDefault();
+    
+        const hash = this.hash;
+    
+        $('html, body')
+          .animate({
+            scrollTop: $(hash).offset().top
+          },800);
+      }
+
+
+    });
+
+    // document.querySelector('#projects').scrollIntoView({ 
+    //     behavior: 'smooth' 
+    //   });

@@ -28,7 +28,7 @@ body{
     overflow-x: hidden;
     /* scroll-behavior: smooth; */
 }
-.intro , .projects .row, .contact{
+.intro , .projects .row, .blogs .row, .contact{
     border-radius: 8px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
               0 2px 2px rgba(0,0,0,0.11), 
@@ -97,6 +97,7 @@ body{
     width: 100%;
     margin: auto;
     position: relative;
+    scroll-margin-top: 4em;
 }
 .intro .para{
     margin:auto;
@@ -145,6 +146,37 @@ body{
     padding: auto;
     /* height:500px; */
 }
+
+.skills{
+    /* background: var(--primary); */
+    width:90%;
+    /* position: relative; */
+}
+.skills .row{
+    background: var(--primary); 
+    height:auto;
+    /* width: 90%;
+    margin:auto; */
+}
+
+.skills .card{
+    /* position: relative; */
+    margin: auto;
+    border-radius: 5px;
+    /* box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.3); */
+    /* background: var(--primary); */
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+    0 2px 2px rgba(0,0,0,0.20), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.10),
+    0 16px 16px rgba(0,0,0,0.05);
+
+}
+
+
+
+
+
 .projects{
     /* background: var(--primary); */
     width:90%;
@@ -169,7 +201,7 @@ body{
     0 4px 4px rgba(0,0,0,0.15), 
     0 8px 8px rgba(0,0,0,0.10),
     0 16px 16px rgba(0,0,0,0.05);
-    transition: box-shadow .7s;
+
 }
 .card-body a{
     display: flex;
@@ -179,14 +211,41 @@ body{
     align-items:center;
     margin:auto;
 }
-.project .col-12{
-    display: flex;
-    justify-content:center;
-    /* align-item: center; */
-}
 .projects .card-title{
     font-size: 1.45rem;
 }
+
+
+.blogs{
+    /* background: var(--primary); */
+    width:90%;
+    /* position: relative; */
+}
+.blogs .row{
+    background: var(--primary); 
+    height:auto;
+    /* width: 90%;
+    margin:auto; */
+}
+
+.blogs .card{
+    /* position: relative; */
+    margin: auto;
+    border-radius: 5px;
+    /* box-shadow: 0px 3px 35px rgba(60, 59, 59, 0.3); */
+    /* background: var(--primary); */
+    width: 18rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+    0 2px 2px rgba(0,0,0,0.20), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.10),
+    0 16px 16px rgba(0,0,0,0.05);
+    transition: box-shadow .7s;
+}
+.blogs .card-title{
+    font-size: 1.45rem;
+}
+
 
 .contact-head{
     margin-top:10rem;
@@ -258,7 +317,7 @@ nav{
     margin:0px;
     display:flex;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
 }
 .nav-links a{
     text-decoration: none;
@@ -304,7 +363,7 @@ nav{
     .nav-links{
         position: absolute;
         right:0px;
-        height:40vh;
+        height:45vh;
         top:8vh;
         background-color: var(--secondary);
         display: flex;
@@ -314,6 +373,9 @@ nav{
         transform: translateY(-100%);
         transition: transform 0.5s ease-in;
         z-index: 5;
+    }
+    .nav-collapse .nav-links{
+        height:40vh;
     }
     .top span{
         display: block;
@@ -396,20 +458,6 @@ nav{
 .nav-active{
     transform: translateY(0%);
 
-}
-.nav-collapse{
-        position: absolute;
-        right:0px;
-        height:0vh;
-        top:8vh;
-        background-color: var(--secondary);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width:100%;
-        transform: translateY(-100%);
-        transition: transform 0.5s ease-in;
-        z-index: 5;
 }
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
