@@ -57,7 +57,3 @@ var typed2 = new Typed('.element', {
     });
 });
 
-$('#projects').click(function($e) {
-    $e.preventDefault();
-    doSomething();
-});
