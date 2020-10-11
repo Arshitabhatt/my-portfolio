@@ -6,4 +6,4 @@ I'm increasingly open-sourcing and documenting my projects and accrodingly I wil
 Watch out for same!
 
 The UI of the website is kept minimal and soothing and with much less animaination.
-Please feel free to fork!
+
